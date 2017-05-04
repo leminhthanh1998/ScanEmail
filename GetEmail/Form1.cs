@@ -134,6 +134,7 @@ namespace GetEmail
             else MessageBox.Show("Bạn chưa nhập nội dung !", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
+        //Xuất file danh sách email
         private void btnXuatFile_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog();
@@ -154,6 +155,7 @@ namespace GetEmail
             }
         }
 
+        //Mở form gửi mail lên
         private void btnGuiMail_Click(object sender, EventArgs e)
         {
             if (dsEmail.Count > 0)

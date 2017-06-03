@@ -244,6 +244,7 @@
             this.progressBar.Location = new System.Drawing.Point(81, 413);
             this.progressBar.Name = "progressBar";
             this.progressBar.Size = new System.Drawing.Size(510, 23);
+            this.progressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar.TabIndex = 21;
             // 
             // label10

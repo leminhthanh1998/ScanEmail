@@ -70,7 +70,7 @@ namespace GetEmail
         /// <returns></returns>
         private List<string> GetEmail(string data)
         {
-            Regex regex = new Regex("[\\w-]+@([\\w-]+\\.)+[\\w-]+", RegexOptions.IgnoreCase);
+            Regex regex = new Regex(@"\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*", RegexOptions.IgnoreCase);
             MatchCollection matchCollection = regex.Matches(data);
             List<string> list = new List<string>();
             foreach (Match match in matchCollection)
